@@ -7,15 +7,15 @@
 }   
 
 body {
+    width: 100%;
+    height: 100%;
     background-image: url("https://images.wallpaperscraft.com/image/single/moon_space_black_185222_1920x1080.jpg");
     background-size: cover;
 }
 
 header {
-    height: 70px;
+    height: 30px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
     flex-direction: row-reverse;
 }
 
@@ -25,23 +25,33 @@ a {
 
 
 
-
 /* section */
 
+.secao1 {
+
+}
 
 /* icon */
 
 .logo {
-    margin-top: 100px;
-    margin-left: 80px;
-    width: 250px;
-    height: 250px;
-    background-color: aliceblue;
+    display: flex;
+    height: 40%;
+    position: relative;
+    align-items: stretch;
+    flex: 1;
+    background-color: rgba(122, 121, 121, 0.151);
 }
 
+.logo img {
+
+}
+
+
 .icones {
+    position: fixed;
     width: 20px;
     display: flex;
+    justify-content: end;
     margin: 3px;
     font-size: 19px;
 }
@@ -54,7 +64,7 @@ a {
     
     &:hover {
         background-color: black;
-    }
+}
 }
 
 .fa-instagram {
@@ -69,41 +79,140 @@ a {
 
 .fa-linkedin {
     background-color: rgb(0, 17, 255);
-    color: aliceblue;
+    
 }
 
 .fa-ghost {
     background-color: aliceblue;
+    
+}
+
+.fa-circle-play {
+    background-color:rgba(160, 17, 243, 0.007);
+    opacity: 1;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+/* Buttons */
+.btn-Player {
+    cursor: pointer;
+}
+
+.buton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-right: 20px;
 }
 
 /* Text */
 
-.textHeader {
-    
+.textDm {
     color: aliceblue;
+    transition: 0.9s;
+
+    &:hover {
+        background-color: rgba(240, 248, 255, 0.342);;
+    }
+}
+
+
+.textInfo {
+    color: rgba(226, 232, 238, 0.651);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 40px;
+    margin-bottom: 15px;
+}
+
+.textHeader {
+    color: aliceblue;
     font-size: 60px;
-    
+    margin-left: 20px;
 }
 
 .pBy {
-
-    color: rgba(240, 248, 255, 0.452);
+    color: rgba(170, 174, 179, 0.452);
     display: flex;
     align-items: center;
-    justify-content: center;
     font-size: 20px;
-    padding-right: 1060px;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-left: 35px;
+    justify-content: flex-start;
     padding-top: 15px;
 }
 
+.darkSideof {
+    color: aliceblue;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+/* Cards */
+.otherCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: auto;
+    gap: 8px;
+    flex-direction: end  /* quebra de linha em telas pequenas */
+    /* display: flex;
+    margin-bottom: 0; */
+}
+
+
+.otherCards img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.otherCards img:hover {
+    transform: scale(1.15);
+}
+
+
 /* img */
 
+/* .imgAnimals {
+    width: 150px;
+    height: 150px;
+}
+
+.imgThepiper {
+    width: 150px;
+    height: 150px;
+}
+
+.imgMeddle {
+    width: 150px;
+    height: 150px;
+}
+
+.imgWish {
+    width: 150px;
+    height: 150px;
+}
+
+.imgAtom {
+    width: 150px;
+    height: 150px;
+} */
+
 .imgDm {
-    background-size: cover;
-    width: 249px;
-    height: 249px;
+    width: 15%;
+    height: 15%;
+    transition: transform 0.4s ease ;
+    position: relative;
+}
+
+.imgDm:hover {
+    transform: scale(1.01);
 }
